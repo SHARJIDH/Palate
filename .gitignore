@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# builds
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# turbo
+.turbo/
+
+# env — commit only the *.example files
+.env
+.env*.local
+
+# deploys
+.vercel/
+
+# misc
+.DS_Store
+*.pem
+*.log
+coverage/
+
+# local editor/agent tooling
+.claude/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.adk/

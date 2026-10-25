@@ -1,0 +1,27 @@
+{
+  "name": "@palate/demo-catalogs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Product catalogs for the demo storefronts the widget is tested on",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./marlow": "./src/marlow/index.ts",
+    "./fold": "./src/fold/index.ts",
+    "./palate-csv": "./src/palate-csv.ts",
+    "./ridgeline": "./src/ridgeline/index.ts",
+    "./saltline": "./src/saltline/index.ts",
+    "./tagide": "./src/tagide/index.ts"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.ts",
+    "fetch-images": "node --env-file-if-exists=.env scripts/fetch-images.ts",
+    "typecheck": "tsc --noEmit",
+    "export-shopify": "node scripts/export-shopify-csv.ts",
+    "export-palate": "node scripts/export-palate-csv.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5.9.3"
+  }
+}
